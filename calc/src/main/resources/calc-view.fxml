@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.calculator.CalculatorController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="700.0" prefWidth="600.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <children>
+                  <Pane fx:id="textPane">
+                     <children>
+                        <Label fx:id="textBox" alignment="CENTER_RIGHT" layoutY="3.200000047683716" prefHeight="98.0" prefWidth="573.0" text="0" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Franklin Gothic Demi Cond" size="93.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="-10.0" left="20.0" right="20.0" top="-25.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="560.0" spacing="5.0">
+               <children>
+                  <Button fx:id="moduloBT" mnemonicParsing="false" onMouseClicked="#DoMod" prefHeight="100.0" prefWidth="150.0" text="mod">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="powerBT" mnemonicParsing="false" onMouseClicked="#DoPow" prefHeight="100.0" prefWidth="150.0" text="x^y">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteBT" mnemonicParsing="false" onMouseClicked="#DeleteAll" prefHeight="100.0" prefWidth="150.0" text="C">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backBT" mnemonicParsing="false" onMouseClicked="#DeleteLast" prefHeight="100.0" prefWidth="150.0" text="⏎">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Button fx:id="fractionBT" mnemonicParsing="false" onMouseClicked="#DoFraction" prefHeight="100.0" prefWidth="150.0" text="1/x">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="percentBT" mnemonicParsing="false" onMouseClicked="#DoPercent" prefHeight="100.0" prefWidth="150.0" text="\%">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sqrtBT" mnemonicParsing="false" onMouseClicked="#DoSqrt" prefHeight="100.0" prefWidth="150.0" text="√x">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="divisionBT" mnemonicParsing="false" onMouseClicked="#DoDivision" prefHeight="100.0" prefWidth="150.0" text="÷">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Button fx:id="sevenBT" mnemonicParsing="false" onMouseClicked="#AddSeven" prefHeight="100.0" prefWidth="150.0" text="7">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="eightBT" mnemonicParsing="false" onMouseClicked="#AddEight" prefHeight="100.0" prefWidth="150.0" text="8">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="nineBT" mnemonicParsing="false" onMouseClicked="#AddNine" prefHeight="100.0" prefWidth="150.0" text="9">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="multiplicationBT" mnemonicParsing="false" onMouseClicked="#DoMultiplications" prefHeight="100.0" prefWidth="150.0" text="×">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Button fx:id="fourBT" mnemonicParsing="false" onMouseClicked="#AddFour" prefHeight="100.0" prefWidth="150.0" text="4">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fiveBT" mnemonicParsing="false" onMouseClicked="#AddFive" prefHeight="100.0" prefWidth="150.0" text="5">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sixBT" mnemonicParsing="false" onMouseClicked="#AddSix" prefHeight="100.0" prefWidth="150.0" text="6">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="minusBT" mnemonicParsing="false" onMouseClicked="#DoSubtraction" prefHeight="100.0" prefWidth="150.0" text="-">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Button fx:id="oneBT" mnemonicParsing="false" onMouseClicked="#AddOne" prefHeight="100.0" prefWidth="150.0" text="1">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="twoBT" mnemonicParsing="false" onMouseClicked="#AddTwo" prefHeight="100.0" prefWidth="150.0" text="2">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="threeBT" mnemonicParsing="false" onMouseClicked="#AddThree" prefHeight="100.0" prefWidth="150.0" text="3">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="plusBT" mnemonicParsing="false" onMouseClicked="#DoAddition" prefHeight="100.0" prefWidth="150.0" text="+">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Button fx:id="positiveBT" mnemonicParsing="false" onMouseClicked="#ChangeSign" prefHeight="100.0" prefWidth="150.0" text="+ / -">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="zeroBT" mnemonicParsing="false" onMouseClicked="#AddZero" prefHeight="100.0" prefWidth="150.0" text="0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="decimalBT" mnemonicParsing="false" onMouseClicked="#AddPeriod" prefHeight="100.0" prefWidth="150.0" text=".">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="equalBT" mnemonicParsing="false" onMouseClicked="#DoEqual" prefHeight="100.0" prefWidth="150.0" text="=">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+module-info.class
+calculator\calculator\Number.class
+calculator\calculator\operations\Addition.class
+calculator\calculator\operations\Multiplication.class
+calculator\calculator\CalculatorApp.class
+calculator\calculator\operations\Division.class
+calculator\calculator\CalculatorController.class
+calculator\calculator\operations\Subtraction.class
